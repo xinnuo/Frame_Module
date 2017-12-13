@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Desktop\\Demo_Studio\\Frame_Module-master\\GridPasswordView\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_gridpasswordview.xml.flat",
+        "source": "D:\\Desktop\\Demo_Studio\\Frame_Module-master\\GridPasswordView\\build\\intermediates\\bundles\\debug\\res\\layout\\gridpasswordview.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Demo_Studio\\Frame_Module-master\\GridPasswordView\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_textview.xml.flat",
+        "source": "D:\\Desktop\\Demo_Studio\\Frame_Module-master\\GridPasswordView\\build\\intermediates\\bundles\\debug\\res\\layout\\textview.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Demo_Studio\\Frame_Module-master\\GridPasswordView\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_divider.xml.flat",
+        "source": "D:\\Desktop\\Demo_Studio\\Frame_Module-master\\GridPasswordView\\build\\intermediates\\bundles\\debug\\res\\layout\\divider.xml"
+    }
+]

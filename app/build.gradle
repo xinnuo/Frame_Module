@@ -1,0 +1,175 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+// 版本号统一的方法
+apply from: '../dependency.gradle'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dir 'libs'
+    }
+}
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    // def globalConfiguration = rootProject.extensions.getByName("ext")
+    // compileSdkVersion globalConfiguration.androidCompileSdkVersion
+    // buildToolsVersion globalConfiguration.androidBuildToolsVersion
+
+    // compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    // buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    // compileSdkVersion project.COMPILE_SDK_VERSION
+    // buildToolsVersion project.BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId "com.ruanmeng.frame_module"
+        minSdkVersion project.MIN_SDK_VERSION
+        targetSdkVersion project.TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        renderscriptSupportModeEnabled = true
+
+        //支持 armeabi-v7a 和 x86 架构 CPU
+        //处理.so文件时的重要法则:要么全部支持，要么都不支持
+        ndk { abiFilters "armeabi-v7a", "x86" }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //移除lint检查的error（程序在buid的时候，会执行lint检查）
+    lintOptions {
+        abortOnError false  // true--错误发生后停止gradle构建
+        ignoreWarnings true // true--只报告error
+        showAll true        // true--显示错误的所有发生位置，不截取
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.android.support:appcompat-v7:' + versions.supportLibraryVersion
+    implementation 'com.android.support:design:' + versions.supportLibraryVersion
+    implementation 'com.android.support:support-v4:' + versions.supportLibraryVersion
+    implementation 'com.android.support:cardview-v7:' + versions.supportLibraryVersion
+    implementation 'com.android.support.constraint:constraint-layout:' + versions.constraintLayoutVersion
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // compile "com.android.support:appcompat-v7:${supportPackageVersion}"
+    // compile "com.android.support:recyclerview-v7:${supportPackageVersion}"
+    // compile "com.android.support:design:${supportPackageVersion}"
+    // compile "com.android.support:support-v4:${supportPackageVersion}"
+    // compile "com.android.support:cardview-v7:${supportPackageVersion}"
+    // compile 'com.android.support.constraint:constraint-layout:1.0.1'
+
+    // def androidDependencies = rootProject.ext.androidDependencies
+    // compile androidDependencies.appcompat_v7
+    // compile androidDependencies.recyclerView
+    // compile androidDependencies.design
+    // compile androidDependencies.support_v4
+    // compile androidDependencies.cardview_v7
+    // compile androidDependencies.constraint_layout
+
+    // kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // permission
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.0.1'
+    kapt 'com.github.hotchemi:permissionsdispatcher-processor:3.0.1'
+    implementation 'com.yanzhenjie:permission:1.1.2'
+
+    // 卡片
+    // compile project(':CardGallery')
+
+    // 图片剪切
+    // compile project(':Cropper')
+
+    // 六位密码框
+    compile project(':GridPasswordView')
+
+    // 图片选择
+    // compile project(':ImageSeletor')
+
+    // tab标签
+    // compile project(':Indicator')
+
+    // jpush极光
+    // compile project(':JPush')
+
+    // nohttp
+    // compile project(':SVProgressHUD')
+    // compile project(':Nohttp')
+
+    // 滚轮效果
+    // compile project(':LoopView')
+
+    // 图片浏览
+    // compile project(':PhotoView')
+
+    // 二维码生成
+    // compile project(':QRcode')
+
+    // 轮播图
+    // compile project(':RollViewPager')
+
+    // 顶部tab停靠
+    // compile project(':ScrollableLayout')
+
+    // supertext
+    // compile project(':SuperText')
+
+    // 友盟分享
+    // compile project(':UmengSocial')
+
+    // JCVideoPlayer
+    // compile project(':JCVideoPlayer-lib')
+
+    // 工具类
+    // compile project(':RxTools-library')
+
+    // 吐丝
+    // compile project(':Toasty-lib')
+
+    // 百度地图
+    // compile project(':BaiduMap')
+
+    // 高德地图
+    // compile project(':AMap')
+
+    // 融云
+    // compile project(':RongCloudIMkit')
+    // 融云音/视频聊天
+    // compile project(':RongCloudCallKit')
+
+    implementation 'com.github.bumptech.glide:glide:' + versions.glideVersion
+    kapt 'com.github.bumptech.glide:compiler:' + versions.glideVersion
+
+    // implementation 'net.cachapa.expandablelayout:expandablelayout:2.7'
+    // implementation 'com.zhy:base-rvadapter:3.0.3'
+    // implementation 'org.greenrobot:eventbus:3.0.0'
+    // implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.5'
+    // implementation 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    // implementation 'com.makeramen:roundedimageview:2.3.0'
+    // implementation 'com.weigan:loopView:0.1.2'
+}

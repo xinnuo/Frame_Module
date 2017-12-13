@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AMap/AMap.iml" filepath="$PROJECT_DIR$/AMap/AMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaiduMap/BaiduMap.iml" filepath="$PROJECT_DIR$/BaiduMap/BaiduMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CardGallery/CardGallery.iml" filepath="$PROJECT_DIR$/CardGallery/CardGallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cropper/Cropper.iml" filepath="$PROJECT_DIR$/Cropper/Cropper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Frame_Module-master.iml" filepath="$PROJECT_DIR$/Frame_Module-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GridPasswordView/GridPasswordView.iml" filepath="$PROJECT_DIR$/GridPasswordView/GridPasswordView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImageSeletor/ImageSeletor.iml" filepath="$PROJECT_DIR$/ImageSeletor/ImageSeletor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Indicator/Indicator.iml" filepath="$PROJECT_DIR$/Indicator/Indicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JCVideoPlayer-lib/JCVideoPlayer-lib.iml" filepath="$PROJECT_DIR$/JCVideoPlayer-lib/JCVideoPlayer-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPush/JPush.iml" filepath="$PROJECT_DIR$/JPush/JPush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KProgressHUD/KProgressHUD.iml" filepath="$PROJECT_DIR$/KProgressHUD/KProgressHUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoopView/LoopView.iml" filepath="$PROJECT_DIR$/LoopView/LoopView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nohttp/Nohttp.iml" filepath="$PROJECT_DIR$/Nohttp/Nohttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoView/PhotoView.iml" filepath="$PROJECT_DIR$/PhotoView/PhotoView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pixelate/Pixelate.iml" filepath="$PROJECT_DIR$/Pixelate/Pixelate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QRcode/QRcode.iml" filepath="$PROJECT_DIR$/QRcode/QRcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RollViewPager/RollViewPager.iml" filepath="$PROJECT_DIR$/RollViewPager/RollViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RongCloudCallKit/RongCloudCallKit.iml" filepath="$PROJECT_DIR$/RongCloudCallKit/RongCloudCallKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RongCloudIMkit/RongCloudIMkit.iml" filepath="$PROJECT_DIR$/RongCloudIMkit/RongCloudIMkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RxTools-library/RxTools-library.iml" filepath="$PROJECT_DIR$/RxTools-library/RxTools-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SVProgressHUD/SVProgressHUD.iml" filepath="$PROJECT_DIR$/SVProgressHUD/SVProgressHUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScrollableLayout/ScrollableLayout.iml" filepath="$PROJECT_DIR$/ScrollableLayout/ScrollableLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperText/SuperText.iml" filepath="$PROJECT_DIR$/SuperText/SuperText.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Toasty-lib/Toasty-lib.iml" filepath="$PROJECT_DIR$/Toasty-lib/Toasty-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UmengSocial/UmengSocial.iml" filepath="$PROJECT_DIR$/UmengSocial/UmengSocial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
