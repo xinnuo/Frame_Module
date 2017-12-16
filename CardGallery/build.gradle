@@ -20,4 +20,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'jameson.io.library:library:0.0.1'
+    compile "com.android.support:recyclerview-v7:${supportPackageVersion}"
 }
